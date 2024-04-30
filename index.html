@@ -1,137 +1,314 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شرکتی</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>شرکتی</title>
 
-    <!-- Style -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="style.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- سربرگ -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <figure class="logo">
-                <img src="img/LogoRayium.png" class="img-fluid" alt="" srcset="">
-            </figure>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <div class="d-flex">
-                <i class="fa-brands fa-telegram me-2 fa-2x"></i>
-                <i class="fa-brands fa-whatsapp me-2 fa-2x"></i>
-                <i class="fa-brands fa-instagram me-2 fa-2x"></i>
-            </div>
-          </div>
-        </div>
-      </nav>
-    <!-- پایان سربرگ -->
-    <!-- معرفی -->
-    <section class="text-white bgindex" id="hero">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-6 py-5">
-                    <h1>راه حل های بهتر برای کسب و کار شما</h1>
-                    <h2>ما تیمی از طراحان با استعداد هستیم که وب سایت می سازیم.</h2>
-                    <button type="button" class="btn btn-primary rounded-5 p-3"><i class="fa-duotone fa-chevrons-down"></i> درباره ما </button>
-                </div>
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                    <figure>
-                        <img src="img/hero-img.png" class="img-fluid animated" alt="" srcset="">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- پایان معرفی -->
-    <!-- خدمات ما -->
-    <section class="p-3">
-      <div class="title text-center mb-5">
-        <h2>خدمات ما</h2>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <article class="card rounded-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <div class="card-body">
-                <div class="text-center">
-                  <i class="fa-brands fa-wordpress fa-5x mb-3"></i>
-                  <h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
-                </div>
-                <p class="text-muted">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                </p>
-              </div>
-            </article>
-          </div>
+	<!-- سربرگ -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<figure class="logo">
+					<img src="img/LogoRayium.png" class="img-fluid" alt="" srcset="">
+				</figure>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Dropdown
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<div class="d-flex">
+					<i class="fa-brands fa-telegram me-2 fa-2x"></i>
+					<i class="fa-brands fa-whatsapp me-2 fa-2x"></i>
+					<i class="fa-brands fa-instagram me-2 fa-2x"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- پایان سربرگ -->
+	<!-- معرفی -->
+	<section class="text-white bgindex" id="hero">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-md-6 py-5">
+					<h1>راه حل های بهتر برای کسب و کار شما</h1>
+					<h2>ما تیمی از طراحان با استعداد هستیم که وب سایت می سازیم.</h2>
+					<button type="button" class="btn btn-primary rounded-5 p-3"><i
+							class="fa-duotone fa-chevrons-down"></i> درباره ما </button>
+				</div>
+				<div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+					<figure>
+						<img src="img/hero-img.png" class="img-fluid animated" alt="" srcset="">
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- پایان معرفی -->
+	<!-- خدمات ما -->
+	<section class="p-3">
+		<div class="title text-center mb-5">
+			<h2>خدمات ما</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<article class="card rounded-4 mb-2 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+						<div class="card-body">
+							<div class="text-center">
+								<i class="fa-brands fa-wordpress fa-5x mb-3"></i>
+								<h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
+							</div>
+							<p class="text-muted">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+							</p>
+						</div>
+					</article>
+				</div>
 
-          <div class="col-md-4">
-            <article class="card rounded-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <div class="card-body">
-                <div class="text-center">
-                  <i class="fa-brands fa-wordpress fa-5x mb-3"></i>
-                  <h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
-                </div>
-                <p class="text-muted">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                </p>
-              </div>
-            </article>
-          </div>
+				<div class="col-md-4">
+					<article class="card rounded-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+						<div class="card-body">
+							<div class="text-center">
+								<i class="fa-brands fa-wordpress fa-5x mb-3"></i>
+								<h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
+							</div>
+							<p class="text-muted">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+							</p>
+						</div>
+					</article>
+				</div>
 
-          <div class="col-md-4">
-            <article class="card rounded-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <div class="card-body">
-                <div class="text-center">
-                  <i class="fa-brands fa-wordpress fa-5x mb-3"></i>
-                  <h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
-                </div>
-                <p class="text-muted">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                </p>
-              </div>
-            </article>
-          </div>
+				<div class="col-md-4">
+					<article class="card rounded-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+						<div class="card-body">
+							<div class="text-center">
+								<i class="fa-brands fa-wordpress fa-5x mb-3"></i>
+								<h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
+							</div>
+							<p class="text-muted">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+							</p>
+						</div>
+					</article>
+				</div>
 
-        </div>
-      </div>
-    </section>
-    <!-- پایان خدمات ما -->
-    <!-- JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
+			</div>
+		</div>
+	</section>
+	<!-- پایان خدمات ما -->
+	<!-- نمونه کارها -->
+	<section class="bg-light p-3">
+		<div class="container">
+			<div class="title text-center mb-5">
+				<h2>نمونه کارها</h2>
+			</div>
+
+			<div class="buttons text-center mb-5">
+				<button type="button" class="btn btn-secondary rounded-5" data-name="all">همه</button>
+				<button type="button" class="btn btn-secondary rounded-5" data-name="cat1">دسته ۱</button>
+				<button type="button" class="btn btn-secondary rounded-5" data-name="cat2">دسته ۲</button>
+				<button type="button" class="btn btn-secondary rounded-5" data-name="cat3">دسته ۳</button>
+			</div>
+
+			<div class="cards">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card item rounded-4" data-name="cat3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<img src="img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<div class="overlay title-overlay text-center text-white">
+								<div class="row">
+									<div class="col-md-8">تست</div>
+									<div class="col-md-4"><i class="fa-duotone fa-eye"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- پایتن نمونه کارها -->
+	<!-- JavaScript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/main.js"></script>
 </body>
-</html>
 
+</html>

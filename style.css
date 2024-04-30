@@ -5,6 +5,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: IranSans;
     src: url('fonts/IRANSansWeb\(FaNum\)_Bold.woff2') format('woff2');
@@ -13,7 +14,7 @@
     font-display: swap;
 }
 
-body{
+body {
     font-family: IranSans;
     background-color: #ececf8;
     color: #212529;
@@ -21,43 +22,47 @@ body{
 
 /* سربرگ */
 
-figure.logo img{
+figure.logo img {
     width: 100px;
     margin-top: 10px;
 }
 
 /* معرفی */
 
-section.bgindex{
+section.bgindex {
     background-color: #37517e;
 }
 
-#hero h1{
+#hero h1 {
     margin-top: 50px;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
 }
-#hero h2{
+
+#hero h2 {
     color: rgba(255, 255, 255, 0.6);
     font-size: 24px;
     margin-bottom: 50px;
 }
-#hero .animated{
+
+#hero .animated {
     animation: UpDown 2s ease-in-out infinite alternate-reverse both;
 }
-@keyframes UpDown{
-    0%{
+
+@keyframes UpDown {
+    0% {
         transform: translateY(10px);
     }
-    100%{
+
+    100% {
         transform: translateY(-10px);
     }
 }
 
 /* خدمات ما */
 
-.title h2{
+.title h2 {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
@@ -66,7 +71,8 @@ section.bgindex{
     position: relative;
     color: #37517e;
 }
-.title h2::before{
+
+.title h2::before {
     content: "";
     position: absolute;
     display: block;
@@ -76,7 +82,8 @@ section.bgindex{
     bottom: 1px;
     left: calc(50% - 60px);
 }
-.title h2::after{
+
+.title h2::after {
     content: "";
     position: absolute;
     display: block;
@@ -85,4 +92,47 @@ section.bgindex{
     background: #47b2e4;
     bottom: 0px;
     left: calc(50% - 20px);
+}
+
+/* نمونه کارها */
+
+.item{
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.item:hover .overlay{
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.title-overlay{
+    height: auto;
+    top: auto;
+    opacity: 0;
+}
+
+.item:hover .title-overlay{
+    opacity: 1;
+    height: auto;
+    padding: 20px 0;
+}
+
+.card.hide{
+    display: none;
 }
