@@ -136,3 +136,13 @@ section.bgindex {
 .card.hide{
     display: none;
 }
+
+/* آمار شرکت */
+
+section.parallax{
+    background-image: url('img/office-backgroundjpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
