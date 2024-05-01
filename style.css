@@ -146,3 +146,15 @@ section.parallax{
     background-attachment: fixed;
     background-size: cover;
 }
+
+/* تیم ما */
+
+.fa-telegram:hover{
+    color: #3498db;
+}
+.fa-whatsapp:hover{
+    color: #25D366;
+}
+.fa-instagram:hover{
+    color: #E4405F;
+}
