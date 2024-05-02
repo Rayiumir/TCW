@@ -158,3 +158,13 @@ section.parallax{
 .fa-instagram:hover{
     color: #E4405F;
 }
+
+/* پابرگ */
+
+footer.footer{
+    background-color: #34495e;
+}
+
+ul li{
+    list-style: none;
+}
