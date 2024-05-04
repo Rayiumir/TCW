@@ -49,7 +49,7 @@ function Rayium_Scripts() {
         'main',
         Rayium_Url . '/js/main.js',
         $deps,
-        '1.0.0',
+        Rayium_Company_Version,
         true
     );
 
@@ -63,7 +63,8 @@ function Rayium_Scripts() {
     wp_enqueue_script(
         'aos',
         Rayium_Url . '/js/aos.js',
-        '5.3.0',
+        $deps,
+        Rayium_Company_Version,
         true
     );
 }

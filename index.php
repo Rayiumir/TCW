@@ -1,3 +1,9 @@
 <?php get_header() ?>
-<div>تست</div>
+    <?php get_template_part('parts/header'); ?>
+    <?php get_template_part('parts/intro'); ?>
+    <?php get_template_part('parts/services'); ?>
+    <?php get_template_part('parts/portfolios'); ?>
+    <?php get_template_part('parts/statis'); ?>
+    <?php get_template_part('parts/teams'); ?>
+    <?php get_template_part('parts/customer'); ?>
 <?php get_footer() ?>
