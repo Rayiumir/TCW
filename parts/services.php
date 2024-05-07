@@ -5,51 +5,35 @@
 		</div>
 		<div class="container">
 			<div class="row">
+				<?php
+					$services = new WP_Query(
+						array(
+							'post_type' => 'service',
+							'posts_per_page' => '3'
+						)
+					);
+
+					if($services->have_posts()){
+						while($services->have_posts()){
+							$services->the_post();
+				?>
 				<div class="col-md-4">
 					<article class="card rounded-4 mb-2 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 						<div class="card-body">
 							<div class="text-center">
-								<i class="fa-brands fa-wordpress fa-5x mb-3"></i>
-								<h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
+								<?php
+									$icon = get_post_meta($post->ID, 'icon', 'true');
+									if(!empty($icon)){
+								?>
+								<i class="fa-brands <?php echo $icon; ?> fa-5x mb-3"></i>
+								<?php } ?>
+								<h2 class="fs-6 fw-bold"><?php the_title() ?></h2>
 							</div>
-							<p class="text-muted">
-								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-							</p>
+							<p class="text-muted"><?php the_excerpt() ?></p>
 						</div>
 					</article>
 				</div>
-
-				<div class="col-md-4">
-					<article class="card rounded-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-						<div class="card-body">
-							<div class="text-center">
-								<i class="fa-brands fa-wordpress fa-5x mb-3"></i>
-								<h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
-							</div>
-							<p class="text-muted">
-								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-							</p>
-						</div>
-					</article>
-				</div>
-
-				<div class="col-md-4">
-					<article class="card rounded-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-						<div class="card-body">
-							<div class="text-center">
-								<i class="fa-brands fa-wordpress fa-5x mb-3"></i>
-								<h2 class="fs-6 fw-bold">لورم ایپسوم متن ساختگی</h2>
-							</div>
-							<p class="text-muted">
-								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-							</p>
-						</div>
-					</article>
-				</div>
-
+				<?php } } ?>
 			</div>
 		</div>
 	</section>
