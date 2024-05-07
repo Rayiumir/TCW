@@ -6,41 +6,31 @@
 			</div>
 
 			<div class="row">
-				<div class="col-6 col-md-2" data-aos="fade-up" data-aos-duration="1000">
-					<figure>
-						<img src="<?php echo Rayium_Url; ?>/img/Logo/company-1.jpg" class="img-fluid rounded-4" alt="" srcset="">
-					</figure>
-				</div>
+				<?php
+					$customer = new WP_Query(
+						array(
+							'post_type' => 'customer',
+							'posts_per_page' => 6
+						)
+					);
 
+					if($customer->have_posts()){
+						while($customer->have_posts()){
+							$customer->the_post();
+				?>
 				<div class="col-6 col-md-2" data-aos="fade-up" data-aos-duration="1000">
-					<figure>
-						<img src="<?php echo Rayium_Url; ?>/img/Logo/company-2.jpg" class="img-fluid rounded-4" alt="" srcset="">
-					</figure>
+					<?php
+						$link = get_post_meta($post->ID, 'link', true);
+						if(!empty($link)) :
+					?>
+					<a href="<?php echo $link; ?>" class="text-dark">
+						<figure>
+							<?php echo the_post_thumbnail('full', ['class' => 'img-fluid rounded-4']); ?>
+						</figure>
+					</a>
+					<?php endif; ?>
 				</div>
-
-				<div class="col-6 col-md-2" data-aos="fade-up" data-aos-duration="1000">
-					<figure>
-						<img src="<?php echo Rayium_Url; ?>/img/Logo/company-3.jpg" class="img-fluid rounded-4" alt="" srcset="">
-					</figure>
-				</div>
-
-				<div class="col-6 col-md-2" data-aos="fade-up" data-aos-duration="1000">
-					<figure>
-						<img src="<?php echo Rayium_Url; ?>/img/Logo/company-4.jpg" class="img-fluid rounded-4" alt="" srcset="">
-					</figure>
-				</div>
-
-				<div class="col-6 col-md-2" data-aos="fade-up" data-aos-duration="1000">
-					<figure>
-						<img src="<?php echo Rayium_Url; ?>/img/Logo/company-5.jpg" class="img-fluid rounded-4" alt="" srcset="">
-					</figure>
-				</div>
-
-				<div class="col-6 col-md-2" data-aos="fade-up" data-aos-duration="1000">
-					<figure>
-						<img src="<?php echo Rayium_Url; ?>/img/Logo/company-6.jpg" class="img-fluid rounded-4" alt="" srcset="">
-					</figure>
-				</div>
+				<?php } } ?>
 			</div>
 		</div>
 	</section>
