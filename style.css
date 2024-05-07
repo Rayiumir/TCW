@@ -156,7 +156,10 @@ section.parallax{
 }
 
 /* تیم ما */
-
+figure.team img{
+    width: 100px;
+    height: 100px;
+}
 .fa-telegram:hover{
     color: #3498db;
 }

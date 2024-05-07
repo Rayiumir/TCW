@@ -5,6 +5,7 @@
 require_once('inc/enqueue.php');
 require_once('inc/post_type.php');
 require_once('inc/services.php');
+require_once('inc/teams.php');
 require_once('navbar.php');
 
 

@@ -48,7 +48,7 @@ function Teams() {
 
             'public' => true,
             'rewrite' => array('slug' => 'team'),
-            'supports' => array('title', 'thumbnail')
+            'supports' => array('title', 'thumbnail', 'editor')
         )
     );
 }
