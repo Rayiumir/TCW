@@ -71,3 +71,21 @@ function Customers() {
     );
 }
 add_action('init', 'Customers');
+
+// Statictis
+
+function Statictis() {
+    register_post_type('statictis',
+        array(
+            'labels' => array(
+                'name' => 'آمار شرکت',
+                'singular_name' => 'آمار ها'
+            ),
+
+            'public' => true,
+            'rewrite' => array('slug' => 'statictis'),
+            'supports' => array('title')
+        )
+    );
+}
+add_action('init', 'Statictis');
