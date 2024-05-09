@@ -30,7 +30,22 @@ function Portfolios() {
 
             'public' => true,
             'rewrite' => array('slug' => 'portfolio'),
-            'supports' => array('title', 'thumbnail', 'editor')
+            'supports' => array('title', 'thumbnail', 'editor'),
+        )
+    );
+
+    $labels = array(
+        'name' => 'دسته بندی'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true
+    );
+
+    register_taxonomy('CategoryPortfolio', array('portfolio'), $args, 
+        array(
+            'hide_empty' => true
         )
     );
 }
