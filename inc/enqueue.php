@@ -69,3 +69,4 @@ function Rayium_Scripts() {
     );
 }
 add_action('wp_footer', 'Rayium_Scripts');
+
