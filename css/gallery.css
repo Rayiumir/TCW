@@ -1,0 +1,23 @@
+#custom_gallery_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    margin: 5px;
+    position: relative;
+}
+.gallery-item img{
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+.gallery-item .remove-image{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 2px 5px;
+    text-decoration: none;
+}

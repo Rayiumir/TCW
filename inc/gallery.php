@@ -7,9 +7,9 @@ add_action('add_meta_boxes', 'Rayium_gallery');
 
 function Rayium_gallery_callback($post) {
     
-    wp_nonce_field(basename(__FILE__), 'Rayium_nonce');
+    wp_nonce_field(basename(__FILE__), 'my_custom_gallery_nonce');
 
-    $gallery = get_post_meta($post->ID, '_my_custom_gallery');
+    $gallery = get_post_meta($post->ID, '_my_custom_gallery', true);
 
     if(!is_array($gallery)){
         $gallery = array();
@@ -19,10 +19,10 @@ function Rayium_gallery_callback($post) {
     echo '<div id="custom_gallery_container">';
     foreach($gallery as $row){
         $imgae_src = wp_get_attachment_image_src($row, 'thumbnail');
-        if($imgae_src && !is_array($imgae_src)){
-            echo '<div class="gallery_item" data-attachment_id="'.esc_attr( $row ).'">
-            <img src="'.esc_url($imgae_src[0]).'">
-            <a href="#" id="remove-image">حذف</a>
+        if($imgae_src && is_array($imgae_src)){
+            echo '<div class="gallery_item" data-attachment-id="'.esc_attr( $row ).'">
+            <img src="' . esc_url($imgae_src[0]) . '" />
+            <a href="#" class="remove-image">حذف</a>
             </div>';
         }else{
             echo '<div>عکسی برای نمایش وجود ندارد.</div>';
@@ -53,7 +53,7 @@ function Rayium_gallery_save($post_id) {
     }
 
     if(isset($_POST['my_custom_gallery'])){
-        $gallery = array_map('inval', explode(',', _POST['my_custom_gallery']));
+        $gallery = array_map('intval', explode(',', $_POST['my_custom_gallery']));
         update_post_meta($post_id, '_my_custom_gallery', $gallery);
     }else{
         delete_post_meta($post_id, '_my_custom_gallery');

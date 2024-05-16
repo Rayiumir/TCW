@@ -70,3 +70,35 @@ function Rayium_Scripts() {
 }
 add_action('wp_footer', 'Rayium_Scripts');
 
+function Gallery_scripts($hook) {
+    
+    global $post;
+
+    if($hook == 'post-new.php' || $hook == 'post.php'){
+
+        if('portfolio' === $post->post_type){
+
+            wp_enqueue_media();
+
+            $deps = ['jquery'];
+
+            wp_enqueue_script(
+                'gallery-metabox',
+                Rayium_Url . '/js/gallery.js',
+                $deps,
+                Rayium_Company_Version,
+                null,
+                true
+            );
+
+            wp_enqueue_style(
+                'gallery-metabox',
+                Rayium_Url . '/css/gallery.css',
+            );
+
+        }
+
+    }
+}
+add_action('admin_enqueue_scripts', 'Gallery_scripts');
+
