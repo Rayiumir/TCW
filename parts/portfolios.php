@@ -37,7 +37,7 @@
 					?>
 					<div class="col-md-4">
 						<div class="card item rounded-4" data-name="<?php echo $terms; ?>" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-							<img src="<?php echo Rayium_Url; ?>/img/1.jpeg" class="img-fluid rounded-4" alt="" srcset="">
+							<?php the_post_thumbnail('full', ['class' => 'img-fluid rounded-4']) ?>
 							<div class="overlay title-overlay text-center text-white">
 								<div class="row">
 									<div class="col-md-8"><?php the_title() ?></div>

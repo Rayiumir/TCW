@@ -51,6 +51,11 @@
 			once: true,
 			mirror: false
 		});
+
+		Fancybox.bind('#gallery a', {
+			groupAll: true,
+		});
+		
 	</script>
 </body>
 

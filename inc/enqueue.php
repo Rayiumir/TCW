@@ -31,6 +31,12 @@ function Rayium_Styles() {
     );
 
     wp_enqueue_style(
+        'fancybox',
+        Rayium_Url . '/css/fancybox.css',
+        '5.0.0'
+    );
+
+    wp_enqueue_style(
         'style',
         Rayium_Style,
         '1.0.0'
@@ -65,6 +71,14 @@ function Rayium_Scripts() {
         Rayium_Url . '/js/aos.js',
         $deps,
         Rayium_Company_Version,
+        true
+    );
+
+    wp_enqueue_script(
+        'fancybox',
+        Rayium_Url . '/js/fancybox.umd.js',
+        $deps,
+        '5.0.0',
         true
     );
 }
