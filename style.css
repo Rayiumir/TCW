@@ -179,3 +179,22 @@ footer.footer{
 ul li{
     list-style: none;
 }
+
+/* وبلاگ */
+
+.tags a{
+    color: #212529;
+    text-decoration: none;
+    margin-right: 5px;
+}
+a.sl-button {
+    color: #212529;
+}
+.sl-count {
+    font-size: 13px;
+    margin-right: 5px;
+}
+.bio a{
+    color: #212529;
+    text-decoration: none;
+}

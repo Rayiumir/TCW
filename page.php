@@ -9,7 +9,7 @@
         <article class="card rounded-4">
             <div class="card-body">
                 <figure class="text-center">
-                    <?php the_post_thumbnail('full', ['class' => 'img-fliud rounded-4']);?>
+                    <?php the_post_thumbnail('full', ['class' => 'img-fluid rounded-4']);?>
                 </figure>
                 <h1 class="fs-3 fw-bold"><?php the_title() ?></h1>
                 <?php the_content() ?>

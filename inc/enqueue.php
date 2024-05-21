@@ -37,6 +37,12 @@ function Rayium_Styles() {
     );
 
     wp_enqueue_style(
+        'like',
+        Rayium_Url . '/css/likes-public.css',
+        '2.0.0'
+    );
+
+    wp_enqueue_style(
         'style',
         Rayium_Style,
         '1.0.0'
