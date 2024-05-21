@@ -14,6 +14,7 @@
 					]);
 
 					foreach($terms as $row){
+						
 				?>
 				<button type="button" class="btn btn-secondary rounded-5" data-name="<?php echo $row->slug; ?>"><?php echo $row->name; ?></button>
 				<?php } ?>
