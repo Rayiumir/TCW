@@ -11,6 +11,7 @@ require_once('inc/statictis.php');
 require_once('inc/gallery.php');
 require_once('post-like.php');
 require_once('navbar.php');
+require_once('pagination.php');
 
 
 // Enable Register Nav Menus
@@ -62,3 +63,18 @@ add_action('manage_posts_custom_column', 'set_post_view_count_column', 10, 2);
 function get_post_view_count($post_id){
     return get_post_meta($post_id, 'post_view_count', true);
 }
+
+// ابزارک ها
+
+function Rayium_widgets() {
+    
+    register_sidebar(
+        array(
+            'name' => 'ابزارک سمت راست',
+            'id' => 'sidebar',
+            'before_widget' => '<div class="card rounded-4 mb-3"><div class="card-body">',
+            'after_widget' => '</div></div>'
+        )
+    );
+}
+add_action('widgets_init', 'Rayium_widgets');

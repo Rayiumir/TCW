@@ -198,3 +198,29 @@ a.sl-button {
     color: #212529;
     text-decoration: none;
 }
+
+/* ابزارک ها */
+
+.wp-block-group__inner-container .wp-block-heading, h2.widgettitle, label.wp-block-search__label {
+    font-size: 22px;
+    font-weight: 700;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 13px;
+}
+
+ul.wp-block-latest-posts__list li a, 
+ul.wp-block-archives-list.wp-block-archives li a, 
+ul.wp-block-categories-list.wp-block-categories li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 700;
+    /* padding: 5px; */
+}
+button.wp-block-search__button.wp-element-button {
+    display: none;
+}
+.wp-block-search__inside-wrapper input {
+    border: 1px solid #e8e8e8;
+    border-radius: 25px;
+    margin-top: 15px;
+}

@@ -4,7 +4,8 @@
             <?php
                 $posts = new WP_Query(
                     array(
-                        'post_type' =>'post'
+                        'post_type' =>'post',
+                        'posts_per_page' => '5'
                     )
                 );
                 if($posts->have_posts()){
@@ -12,7 +13,7 @@
                         $posts->the_post();
             ?>
             <a href="<?php the_permalink()?>" class="text-decoration-none">
-                <article class="card rounded-4">
+                <article class="card rounded-4 mb-3">
                     <div class="card-body">
                         <figure class="text-center">
                             <?php the_post_thumbnail('full', ['class' => 'img-fluid rounded-4']);?>
@@ -27,6 +28,7 @@
                 </article>
             </a>
             <?php } } ?>
+            <?php echo bootstrap_pagination(); ?>
         </section>
         <aside class="col-md-4">
             <?php get_sidebar() ?>
