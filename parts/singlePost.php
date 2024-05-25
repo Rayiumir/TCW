@@ -37,6 +37,11 @@
                 </div>
             </article>
             <?php } } ?>
+            <section class="card rounded-4 mt-3">
+                <div class="card-body">
+                    <?php comments_template(); ?>
+                </div>
+            </section>
         </section>
         <aside class="col-md-4">
             <?php get_sidebar() ?>
