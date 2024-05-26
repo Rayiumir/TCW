@@ -1,3 +1,4 @@
+<?php if(ot_get_option('on_3') != "off") { ?>
 <!-- خدمات ما -->
 <section class="p-3">
 		<div class="title text-center mb-5">
@@ -38,3 +39,4 @@
 		</div>
 	</section>
 	<!-- پایان خدمات ما -->
+	<?php } ?>

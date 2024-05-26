@@ -5,8 +5,7 @@
 				<div class="col-md-4">
 					<h5 class="fw-bold mb-4"><i class="fa-duotone fa-pen-nib"></i> درباره ما </h5>
 					<p>
-						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
-						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+						<?php echo ot_get_option('about'); ?>
 					</p>
 				</div>
 
@@ -14,14 +13,12 @@
 					<h5 class="fw-bold mb-4"><i class="fa-duotone fa-list-tree"></i> پیوند های مفید </h5>
 					
 					<ul>
-						<li>تست</li>
-						<li>تست</li>
-						<li>تست</li>
-						<li>تست</li>
-						<li>تست</li>
-						<li>تست</li>
-						<li>تست</li>
-						<li>تست</li>
+						<?php wp_list_categories( array(
+							'orderby'    => 'name',
+							'show_count' => false,
+							'exclude'    => array( 10 ),
+							'title_li' => ''
+						) ); ?> 
 					</ul>
 				</div>
 
@@ -29,9 +26,9 @@
 					<h5 class="fw-bold"><i class="fa-duotone fa-share-nodes"></i> اشتراک گذاری </h5>
 					
 					<div class="mt-4 text-center">
-						<i class="fa-brands fa-telegram me-2 fa-2x"></i>
-						<i class="fa-brands fa-whatsapp me-2 fa-2x"></i>
-						<i class="fa-brands fa-instagram me-2 fa-2x"></i>
+						<a href="<?php echo ot_get_option('text1'); ?>" title="تلگرام"><i class="fa-brands fa-telegram me-2 fa-2x"></i></a>
+						<a href="<?php echo ot_get_option('text2'); ?>" title="واتساپ" ><i class="fa-brands fa-whatsapp me-2 fa-2x"></i></a>
+						<a href="<?php echo ot_get_option('text3'); ?>" title="اینستاگرام" ><i class="fa-brands fa-instagram me-2 fa-2x"></i></a>
 					</div>
 				</div>
 			</div>

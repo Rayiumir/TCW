@@ -1,3 +1,4 @@
+<?php if(ot_get_option('on_4') != "off") { ?>
 <!-- نمونه کارها -->
 <section class="bg-light p-3">
 		<div class="container">
@@ -54,3 +55,4 @@
 		</div>
 	</section>
 	<!-- پایان نمونه کارها -->
+	<?php } ?>

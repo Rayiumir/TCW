@@ -2,9 +2,16 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 		<div class="container">
 			<a class="navbar-brand" href="#">
+				<?php if(ot_get_option('on_1') != "off") { ?>
 				<figure class="logo">
-					<img src="<?php echo Rayium_Url; ?>/img/LogoRayium.png" class="img-fluid" alt="" srcset="">
+					<?php
+					$logo = ot_get_option('logo');
+					if(!empty($logo)){
+					?>
+					<img src="<?php echo $logo; ?>" class="img-fluid" alt="" srcset="">
+					<?php } ?>
 				</figure>
+				<?php } ?>
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -23,11 +30,13 @@
 						'walker' => new bootstrap_5_wp_nav_menu_walker()
 					));
 				?>
+				<?php if(ot_get_option('on_2') != "off") { ?>
 				<div class="d-flex">
-					<i class="fa-brands fa-telegram me-2 fa-2x"></i>
-					<i class="fa-brands fa-whatsapp me-2 fa-2x"></i>
-					<i class="fa-brands fa-instagram me-2 fa-2x"></i>
+					<a href="<?php echo ot_get_option('text1'); ?>" title="تلگرام"><i class="fa-brands fa-telegram me-2 fa-2x"></i></a>
+					<a href="<?php echo ot_get_option('text2'); ?>" title="واتساپ" ><i class="fa-brands fa-whatsapp me-2 fa-2x"></i></a>
+					<a href="<?php echo ot_get_option('text3'); ?>" title="اینستاگرام" ><i class="fa-brands fa-instagram me-2 fa-2x"></i></a>
 				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</nav>

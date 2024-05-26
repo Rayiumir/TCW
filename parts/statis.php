@@ -1,3 +1,4 @@
+<?php if(ot_get_option('on_5') != "off") { ?>
 <!-- آمار شرکت -->
 <section class="parallax p-5 text-white">
 		<div class="container text-center">
@@ -30,3 +31,4 @@
 		</div>
 	</section>
 	<!-- پایان آمار شرکت -->
+	<?php } ?>

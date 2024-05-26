@@ -87,6 +87,7 @@ function Rayium_Scripts() {
         '5.0.0',
         true
     );
+
 }
 add_action('wp_footer', 'Rayium_Scripts');
 

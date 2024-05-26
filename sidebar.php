@@ -1,3 +1,4 @@
+<?php if(ot_get_option('on_8') != "off") { ?>
 <div class="card rounded-4 mb-3">
     <div class="card-body">
         <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-light rounded-5 shadow-sm" id="pills-tab" role="tablist">
@@ -50,4 +51,7 @@
         </div>
     </div>
 </div>
-<?php dynamic_sidebar("sidebar") ?>
+<?php } ?>
+<?php if(ot_get_option('on_9') != "off") { ?>
+    <?php dynamic_sidebar("sidebar") ?>
+<?php } ?>

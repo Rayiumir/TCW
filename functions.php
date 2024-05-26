@@ -24,7 +24,7 @@ if(function_exists('add_theme_support')){
     add_theme_support('post-thumbnails');
 }
 
-// بازدید ها
+// View Posts
 
 function set_post_view_custom_field() {
     
@@ -64,7 +64,7 @@ function get_post_view_count($post_id){
     return get_post_meta($post_id, 'post_view_count', true);
 }
 
-// ابزارک ها
+// Sidebars
 
 function Rayium_widgets() {
     
@@ -79,5 +79,11 @@ function Rayium_widgets() {
 }
 add_action('widgets_init', 'Rayium_widgets');
 
-
-
+// Calling Option Tree
+add_filter( 'ot_show_new_layout', '__return_false' );
+add_filter( 'ot_show_pages', '__return_false' );
+add_filter( 'ot_theme_mode', '__return_true' );
+add_filter( 'ot_meta_boxes', '__return_true' );
+include_once( 'option/option-tree/ot-loader.php' );
+include_once( 'option/theme-options.php' );
+//include_once( 'option/theme-metabox.php' );

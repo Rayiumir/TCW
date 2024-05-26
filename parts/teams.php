@@ -1,3 +1,4 @@
+<?php if(ot_get_option('on_6') != "off") { ?>
 <!-- تیم ما -->
 <section class="bg-light p-5">
 		<div class="container">
@@ -47,3 +48,4 @@
 		</div>
 	</section>
 	<!-- پایان تیم ما -->
+	<?php } ?>

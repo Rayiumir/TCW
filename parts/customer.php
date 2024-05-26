@@ -1,3 +1,4 @@
+<?php if(ot_get_option('on_7') != "off") { ?>
 <!-- مشتریان ما -->
 <section class="p-3">
 		<div class="container">
@@ -34,4 +35,5 @@
 			</div>
 		</div>
 	</section>
+	<?php } ?>
 	<!-- پایان مشتریان ما -->
